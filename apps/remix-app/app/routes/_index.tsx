@@ -42,14 +42,14 @@ export default function Index() {
               <img
                 className="h-full w-full object-cover"
                 src="https://user-images.githubusercontent.com/4941205/189402031-751764e0-2227-4f5e-a527-6763563c5911.jpg"
-                alt="The Bling Boys of Alabama Gospel band singing"
+                alt="The Bling Boys of Alabama Mosque ICU band singing"
               />
               <div className="absolute inset-0 bg-[color:#6a3f077d] mix-blend-multiply" />
             </div>
             <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
               <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
                 <span className="block uppercase text-amber-500 drop-shadow-md">
-                  Gospel Stack
+                  Mosque ICU Stack
                 </span>
               </h1>
               <p className="mx-auto my-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
