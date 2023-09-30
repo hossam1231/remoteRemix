@@ -3,7 +3,7 @@ RUN apt-get update && apt-get install -y openssl
 WORKDIR /app
 RUN yarn global add turbo
 COPY . .
-RUN turbo prune --scope=@remix-gospel-stack/remix-app --docker
+RUN turbo prune --scope=@mosque-icu/remix-app --docker
 RUN find . -name "node_modules" -type d -prune -exec rm -rf '{}' +
 
 # Base strategy to have layer caching
@@ -37,7 +37,7 @@ COPY --from=pruner /app/out/full/ .
 COPY --from=dev-deps /app/ .
 COPY turbo.json turbo.json
 RUN pnpm run generate
-RUN pnpm run build --filter=@remix-gospel-stack/remix-app...
+RUN pnpm run build --filter=@mosque-icu/remix-app...
 
 # Runner
 FROM node:18-bullseye-slim AS runner

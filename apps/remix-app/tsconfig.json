@@ -1,23 +1,15 @@
 {
-  "include": [
-    "types/remix.env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-  ],
+  "include": ["types/remix.env.d.ts", "**/*.ts", "**/*.tsx"],
   "ts-node": {
-		"swc": true
-	},
+    "swc": true
+  },
   "compilerOptions": {
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ES2022"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "nodenext",
-		"moduleResolution": "nodenext",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "target": "ES2022",
     "strict": true,
@@ -29,36 +21,20 @@
     "allowImportingTsExtensions": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./app/*"
-      ],
-      "@remix-gospel-stack/ui/*": [
-        "../../packages/ui/src/*"
-      ],
-      "@remix-gospel-stack/ui": [
-        "../../packages/ui/src/index"
-      ],
-      "@remix-gospel-stack/business/*": [
-        "../../packages/business/src/*"
-      ],
-      "@remix-gospel-stack/business": [
-        "../../packages/business/src/index"
-      ],
-      "@remix-gospel-stack/database/*": [
-        "../../packages/database/src/*"
-      ],
-      "@remix-gospel-stack/database": [
-        "../../packages/database/src/index"
-      ],
-      "@remix-gospel-stack/internal-nobuild": [
+      "~/*": ["./app/*"],
+      "@mosque-icu/ui/*": ["../../packages/ui/src/*"],
+      "@mosque-icu/ui": ["../../packages/ui/src/index"],
+      "@mosque-icu/business/*": ["../../packages/business/src/*"],
+      "@mosque-icu/business": ["../../packages/business/src/index"],
+      "@mosque-icu/database/*": ["../../packages/database/src/*"],
+      "@mosque-icu/database": ["../../packages/database/src/index"],
+      "@mosque-icu/internal-nobuild": [
         "../../packages/internal-nobuild/src/index"
       ],
-      "@remix-gospel-stack/internal-nobuild/*": [
+      "@mosque-icu/internal-nobuild/*": [
         "../../packages/internal-nobuild/src/*"
       ],
-      "@remix-gospel-stack/tailwind-config": [
-        "../../config/tailwind-config/src/index"
-      ],
+      "@mosque-icu/tailwind-config": ["../../config/tailwind-config/src/index"]
     },
     "noEmit": true
   }

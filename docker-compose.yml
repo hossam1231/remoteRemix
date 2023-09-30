@@ -7,7 +7,7 @@ volumes:
 services:
   db:
     image: postgres:latest
-    container_name: "remix-gospel-stack-postgres"
+    container_name: "mosque-icu-postgres"
     restart: always
     environment:
       - POSTGRES_USER=postgres
@@ -35,7 +35,6 @@ services:
   #     - 3000:3000
   #   networks:
   #     - app_network
-
 
 networks:
   app_network:

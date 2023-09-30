@@ -1,1 +1,1 @@
-module.exports = require("@remix-gospel-stack/eslint-config/remix");
+module.exports = require("@mosque-icu/eslint-config/remix");

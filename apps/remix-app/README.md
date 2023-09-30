@@ -13,7 +13,7 @@ from the root of your Monorepo.
 Start the Remix development asset server and the Express server by running:
 
 ```sh
-pnpm run dev --filter=@remix-gospel-stack/remix-app...
+pnpm run dev --filter=@mosque-icu/remix-app...
 ```
 
 This starts your app in development mode, which will purge the server require cache when Remix rebuilds assets so you don't need a process manager restarting the express server.
@@ -26,13 +26,13 @@ This starts your app in development mode, which will purge the server require ca
 Build App for production:
 
 ```sh
-pnpm run build --filter=@remix-gospel-stack/remix-app...
+pnpm run build --filter=@mosque-icu/remix-app...
 ```
 
 Then run the app in production mode:
 
 ```sh
-pnpm run start --filter=@remix-gospel-stack/remix-app
+pnpm run start --filter=@mosque-icu/remix-app
 ```
 
 Now you'll need to pick a host to deploy it to.

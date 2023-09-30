@@ -7,7 +7,7 @@ export const getSalesPersonDirectory = (): SalesPersonDirectory => {
   return [
     {
       name: "mark",
-      email: "mark@remix-gospel-stack.com",
+      email: "mark@mosque-icu.com",
       zipcodes: [
         "01",
         "73",
@@ -34,7 +34,7 @@ export const getSalesPersonDirectory = (): SalesPersonDirectory => {
     },
     {
       name: "coltrane",
-      email: "coltrane@remix-gospel-stack.com",
+      email: "coltrane@mosque-icu.com",
       zipcodes: [
         "62",
         "59",
@@ -105,11 +105,11 @@ export const getSalesPersonDirectory = (): SalesPersonDirectory => {
         "47",
         "82",
       ],
-      email: "philippe@remix-gospel-stack.com",
+      email: "philippe@mosque-icu.com",
     },
     {
       name: "lance",
-      email: "lance@remix-gospel-stack.com",
+      email: "lance@mosque-icu.com",
       zipcodes: [
         "76",
         "27",
@@ -138,12 +138,12 @@ export const getSalesPersonDirectory = (): SalesPersonDirectory => {
     },
     {
       name: "john",
-      email: "john@remix-gospel-stack.com",
+      email: "john@mosque-icu.com",
       zipcodes: ["974", "976"],
     },
     {
       name: "mike",
-      email: "mike@remix-gospel-stack.com",
+      email: "mike@mosque-icu.com",
       zipcodes: ["971", "972", "973", "975", "984", "986", "987", "988"],
     },
   ];

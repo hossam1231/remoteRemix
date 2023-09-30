@@ -16,7 +16,7 @@ module.exports = {
     "^(next/(.*)$)|^(next$)",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^@remix-gospel-stack/(.*)$",
+    "^@mosque-icu/(.*)$",
     "",
     "^~/utils/(.*)$",
     "^~/components/(.*)$",

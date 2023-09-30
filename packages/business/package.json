@@ -1,5 +1,5 @@
 {
-  "name": "@remix-gospel-stack/business",
+  "name": "@mosque-icu/business",
   "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -17,12 +17,12 @@
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@remix-gospel-stack/database": "workspace:*",
+    "@mosque-icu/database": "workspace:*",
     "tiny-invariant": "^1.3.1"
   },
   "devDependencies": {
-    "@remix-gospel-stack/eslint-config": "workspace:*",
-    "@remix-gospel-stack/tsconfig": "workspace:*",
+    "@mosque-icu/eslint-config": "workspace:*",
+    "@mosque-icu/tsconfig": "workspace:*",
     "@types/node": "^20.6.2",
     "rimraf": "^5.0.1",
     "tsup": "^7.2.0",

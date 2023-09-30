@@ -1,6 +1,5 @@
+import { shadcnPreset } from "@mosque-icu/ui/tailwind";
 import type { Config } from "tailwindcss";
-
-import { shadcnPreset } from "@remix-gospel-stack/ui/tailwind";
 
 export default {
   content: [

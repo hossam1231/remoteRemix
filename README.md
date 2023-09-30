@@ -7,7 +7,7 @@ Remix TypeScript monorepo with Turborepo pipelines, Prisma, PostgreSQL, Docker d
 ### Quickstart (recommended)
 
 ```bash
-pnpm create remix@latest --init-script --install --template https://github.com/PhilDL/remix-gospel-stack
+pnpm create remix@latest --init-script --install --template https://github.com/PhilDL/mosque-icu
 ```
 
 > :minidisc: This repository is opiniated:
@@ -19,8 +19,8 @@ pnpm create remix@latest --init-script --install --template https://github.com/P
 ### (Alternative) Cloning the repository
 
 ```bash
-git clone git@github.com:PhilDL/remix-gospel-stack.git
-cd remix-gospel-stack
+git clone git@github.com:PhilDL/mosque-icu.git
+cd mosque-icu
 pnpm add -w @remix-run/dev
 pnpm remix init
 ```
@@ -34,14 +34,14 @@ _This Package **uses `pnpm` as the package manager** of choice to manage workspa
 ### Monorepo architecture powered by [Turborepo](https://turborepo.org/) and pnpm workspaces:
 
 - `apps` Folder containing the applications
-  - [`remix-app`](https://github.com/PhilDL/remix-gospel-stack/tree/main/apps/remix-app): the [Remix.run](https://remix.run) app in ESM.
-  - [`nextjs-app`](https://github.com/PhilDL/remix-gospel-stack/tree/main/apps/nextjs-app): a [Next.js](https://nextjs.org) app
+  - [`remix-app`](https://github.com/PhilDL/mosque-icu/tree/main/apps/remix-app): the [Remix.run](https://remix.run) app in ESM.
+  - [`nextjs-app`](https://github.com/PhilDL/mosque-icu/tree/main/apps/nextjs-app): a [Next.js](https://nextjs.org) app
 - `packages` Folder containing examples
 
-  - [`ui`](https://github.com/PhilDL/remix-gospel-stack/tree/main/packages/ui): a React UI package example powered by [shadcn/ui](https://ui.shadcn.com/). Some example components and shadcn/ui Tailwind config exported as Tailwind plugin and preset.
-  - [`database`](https://github.com/PhilDL/remix-gospel-stack/tree/main/packages/database): a [Prisma](https://prisma.io) wrapper ready to be used in other packages, or apps. Bundled with [tsup](https://tsup.egoist.dev/).
-  - [`business`](https://github.com/PhilDL/remix-gospel-stack/tree/main/packages/business): an example package using the Prisma `database` as a dependency and using a _repository pattern_ like example.
-  - [`internal-nobuild`](https://github.com/PhilDL/remix-gospel-stack/tree/main/packages/internal-nobuild): an example package that is pure TypeScript with no build steps. The `main` entrypoint to the package is directly `src/index.ts`. Remix takes care of compiling with its own build step (with esbuild). This packages also contains unit test with Vitest.
+  - [`ui`](https://github.com/PhilDL/mosque-icu/tree/main/packages/ui): a React UI package example powered by [shadcn/ui](https://ui.shadcn.com/). Some example components and shadcn/ui Tailwind config exported as Tailwind plugin and preset.
+  - [`database`](https://github.com/PhilDL/mosque-icu/tree/main/packages/database): a [Prisma](https://prisma.io) wrapper ready to be used in other packages, or apps. Bundled with [tsup](https://tsup.egoist.dev/).
+  - [`business`](https://github.com/PhilDL/mosque-icu/tree/main/packages/business): an example package using the Prisma `database` as a dependency and using a _repository pattern_ like example.
+  - [`internal-nobuild`](https://github.com/PhilDL/mosque-icu/tree/main/packages/internal-nobuild): an example package that is pure TypeScript with no build steps. The `main` entrypoint to the package is directly `src/index.ts`. Remix takes care of compiling with its own build step (with esbuild). This packages also contains unit test with Vitest.
     Remix uses `tsconfig.json` paths to reference to that project and its types. _I would recommend these types of **internal** packages when you don't plan on publishing the package._
 
 - `config-packages`:
@@ -92,12 +92,12 @@ _This Package **uses `pnpm` as the package manager** of choice to manage workspa
   ```
 - Run the first build (with dependencies via the `...` option)
   ```bash
-  pnpm run build --filter=@remix-gospel-stack/remix-app...
+  pnpm run build --filter=@mosque-icu/remix-app...
   ```
   **Running simply `pnpm run build` will build everything, including the NextJS app.**
 - Run the Remix dev server
   ```bash
-  pnpm run dev --filter=@remix-gospel-stack/remix-app
+  pnpm run dev --filter=@mosque-icu/remix-app
   ```
 
 ## Create packages
@@ -105,7 +105,7 @@ _This Package **uses `pnpm` as the package manager** of choice to manage workspa
 ### Internal package
 
 ```bash
-turbo gen workspace --name @remix-gospel-stack/foobarbaz --type package --copy
+turbo gen workspace --name @mosque-icu/foobarbaz --type package --copy
 ```
 
 Then follow the prompts
@@ -116,7 +116,7 @@ Check the `turbo.json` file to see the available pipelines.
 
 - Run the Cypress tests and Dev
   ```bash
-  pnpm run test:e2e:dev --filter=@remix-gospel-stack/remix-app
+  pnpm run test:e2e:dev --filter=@mosque-icu/remix-app
   ```
 - Lint everything
   ```bash
@@ -154,8 +154,8 @@ Prior to your first deployment, you'll need to do a few things:
 - Create two apps on Fly, one for staging and one for production:
 
   ```sh
-  fly apps create remix-gospel-stack
-  fly apps create remix-gospel-stack-staging
+  fly apps create mosque-icu
+  fly apps create mosque-icu-staging
   ```
 
   > **Note:** Once you've successfully created an app, double-check the `fly.toml` file to ensure that the `app` key is the name of the production app you created. This Stack [automatically appends a unique suffix at init](https://github.com/remix-run/blues-stack/blob/4c2f1af416b539187beb8126dd16f6bc38f47639/remix.init/index.js#L29) which may not match the apps you created on Fly. You will likely see [404 errors in your Github Actions CI logs](https://community.fly.io/t/404-failure-with-deployment-with-remix-blues-stack/4526/3) if you have this mismatch.
@@ -176,11 +176,11 @@ Prior to your first deployment, you'll need to do a few things:
 - Create a database for both your staging and production environments. Run the following:
 
   ```sh
-  fly postgres create --name remix-gospel-stack-db
-  fly postgres attach --app remix-gospel-stack remix-gospel-stack-db
+  fly postgres create --name mosque-icu-db
+  fly postgres attach --app mosque-icu mosque-icu-db
 
-  fly postgres create --name remix-gospel-stack-staging-db
-  fly postgres attach --app remix-gospel-stack-staging remix-gospel-stack-staging-db
+  fly postgres create --name mosque-icu-staging-db
+  fly postgres attach --app mosque-icu-staging mosque-icu-staging-db
   ```
 
   > **Note:** You'll get the same warning for the same reason when attaching the staging database that you did in the `fly set secret` step above. No worries. Proceed!
@@ -245,7 +245,7 @@ Learn more about the power of Turborepo:
 
 ## Support
 
-If you found the template useful, please consider giving it a [Star ⭐](https://github.com/PhilDL/remix-gospel-stack). Thanks you!
+If you found the template useful, please consider giving it a [Star ⭐](https://github.com/PhilDL/mosque-icu). Thanks you!
 
 ## Disclaimer
 

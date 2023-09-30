@@ -1,5 +1,5 @@
 {
-  "name": "@remix-gospel-stack/ui",
+  "name": "@mosque-icu/ui",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -27,8 +27,8 @@
     "tailwindcss-animate": "^1.0.6"
   },
   "devDependencies": {
-    "@remix-gospel-stack/eslint-config": "workspace:*",
-    "@remix-gospel-stack/tsconfig": "workspace:*",
+    "@mosque-icu/eslint-config": "workspace:*",
+    "@mosque-icu/tsconfig": "workspace:*",
     "@remix-run/dev": "^2.0.0",
     "@remix-run/node": "^2.0.0",
     "@tailwindcss/typography": "^0.5.10",

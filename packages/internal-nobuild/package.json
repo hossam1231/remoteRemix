@@ -1,5 +1,5 @@
 {
-  "name": "@remix-gospel-stack/internal-nobuild",
+  "name": "@mosque-icu/internal-nobuild",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -13,8 +13,8 @@
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@remix-gospel-stack/eslint-config": "workspace:*",
-    "@remix-gospel-stack/tsconfig": "workspace:*",
+    "@mosque-icu/eslint-config": "workspace:*",
+    "@mosque-icu/tsconfig": "workspace:*",
     "rimraf": "^5.0.1",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",

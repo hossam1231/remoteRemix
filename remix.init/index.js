@@ -12,8 +12,8 @@ const escapeRegExp = (string) =>
 const getRandomString = (length) => crypto.randomBytes(length).toString("hex");
 
 const main = async ({ rootDirectory }) => {
-  const appNameRegex = escapeRegExp("remix-gospel-stack");
-  const orgNameRegex = escapeRegExp("@remix-gospel-stack");
+  const appNameRegex = escapeRegExp("mosque-icu");
+  const orgNameRegex = escapeRegExp("@mosque-icu");
 
   const DIR_NAME = path.basename(rootDirectory);
   const SUFFIX = getRandomString(2);
@@ -154,7 +154,7 @@ const rootConfigsRename = async ({
   const newGithubCI = githubCI.replace(globalOrgNameRegex, ORG_NAME);
   const newTurbo = turbo.replace(globalOrgNameRegex, ORG_NAME);
   const newDockerCompose = dockerCompose.replaceAll(
-    "remix-gospel-stack-postgres",
+    "mosque-icu-postgres",
     `${APP_NAME}-postgres`,
   );
 

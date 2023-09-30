@@ -1,5 +1,5 @@
 {
-  "extends": "@remix-gospel-stack/tsconfig/node18.json",
+  "extends": "@mosque-icu/tsconfig/node18.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "compilerOptions": {
     "experimentalDecorators": true,
@@ -9,8 +9,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "noEmit": true,
-    "paths": {
-    },
+    "paths": {}
   },
   "exclude": ["node_modules"]
 }

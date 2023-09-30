@@ -16,18 +16,14 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./app/*"],
-      "@remix-gospel-stack/ui/*": [
-        "../../packages/ui/src/*"
-      ],
-      "@remix-gospel-stack/ui": [
-        "../../packages/ui/src/index"
-      ],
-      "@remix-gospel-stack/internal-nobuild": [
+      "@mosque-icu/ui/*": ["../../packages/ui/src/*"],
+      "@mosque-icu/ui": ["../../packages/ui/src/index"],
+      "@mosque-icu/internal-nobuild": [
         "../../packages/internal-nobuild/src/index"
       ],
-      "@remix-gospel-stack/internal-nobuild/*": [
+      "@mosque-icu/internal-nobuild/*": [
         "../../packages/internal-nobuild/src/*"
-      ],
+      ]
     },
 
     // Remix takes care of building everything in `remix build`.

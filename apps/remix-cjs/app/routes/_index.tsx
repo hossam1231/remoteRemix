@@ -1,21 +1,20 @@
-import { useLoaderData } from "@remix-run/react";
-import {
-  json,
-  type LoaderFunctionArgs,
-  type MetaFunction,
-} from "@vercel/remix";
-
-import { lookUpSalesPersonForZipcode } from "@remix-gospel-stack/internal-nobuild/client";
-import { getSalesPersonDirectory } from "@remix-gospel-stack/internal-nobuild/queries.server";
-import { Button } from "@remix-gospel-stack/ui/button";
+import { lookUpSalesPersonForZipcode } from "@mosque-icu/internal-nobuild/client";
+import { getSalesPersonDirectory } from "@mosque-icu/internal-nobuild/queries.server";
+import { Button } from "@mosque-icu/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@remix-gospel-stack/ui/card";
-import { Checkbox } from "@remix-gospel-stack/ui/checkbox";
+} from "@mosque-icu/ui/card";
+import { Checkbox } from "@mosque-icu/ui/checkbox";
+import { useLoaderData } from "@remix-run/react";
+import {
+  json,
+  type LoaderFunctionArgs,
+  type MetaFunction,
+} from "@vercel/remix";
 
 export const config = { runtime: "edge" };
 

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@remix-gospel-stack/nextjs-app",
+  "name": "@mosque-icu/nextjs-app",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev -p 3001",
@@ -14,9 +14,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-gospel-stack/database": "workspace:*",
-    "@remix-gospel-stack/eslint-config": "workspace:*",
-    "@remix-gospel-stack/tsconfig": "workspace:*",
+    "@mosque-icu/database": "workspace:*",
+    "@mosque-icu/eslint-config": "workspace:*",
+    "@mosque-icu/tsconfig": "workspace:*",
     "@types/node": "^20.6.2",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",

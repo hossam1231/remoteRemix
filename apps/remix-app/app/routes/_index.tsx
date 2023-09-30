@@ -1,4 +1,15 @@
 import React from "react";
+import { lookUpSalesPersonForZipcode } from "@mosque-icu/internal-nobuild/client";
+import { getSalesPersonDirectory } from "@mosque-icu/internal-nobuild/queries.server";
+import { Button } from "@mosque-icu/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@mosque-icu/ui/card";
+import { Checkbox } from "@mosque-icu/ui/checkbox";
 import { json, type LoaderFunctionArgs } from "@remix-run/node";
 import {
   isRouteErrorResponse,
@@ -6,19 +17,7 @@ import {
   useRouteError,
 } from "@remix-run/react";
 
-import { lookUpSalesPersonForZipcode } from "@remix-gospel-stack/internal-nobuild/client";
-import { getSalesPersonDirectory } from "@remix-gospel-stack/internal-nobuild/queries.server";
-import { Button } from "@remix-gospel-stack/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@remix-gospel-stack/ui/card";
-import { Checkbox } from "@remix-gospel-stack/ui/checkbox";
-
-// import { Checkbox } from "@remix-gospel-stack/ui/checkbox";
+// import { Checkbox } from "@mosque-icu/ui/checkbox";
 
 import Service, { helloWorld } from "~/services.server.ts";
 
