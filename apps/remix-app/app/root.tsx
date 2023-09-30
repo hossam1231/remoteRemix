@@ -21,7 +21,7 @@ export const links: LinksFunction = () => {
 export const meta: MetaFunction = () => {
   return [
     { charset: "utf-8" },
-    { title: "Remix Gospel Stack" },
+    { title: "Mosque ICU" },
     { viewport: "width=device-width,initial-scale=1" },
   ];
 };

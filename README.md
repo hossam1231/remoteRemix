@@ -1,6 +1,6 @@
-# Remix Gospel stack with Turborepo
+# Mosque ICU with Turborepo
 
-![The Remix Gospel Stack](https://repository-images.githubusercontent.com/533426847/134e6276-a6a8-41f1-94d3-f6dcb8f58b5f)
+![The Mosque ICU](https://repository-images.githubusercontent.com/533426847/134e6276-a6a8-41f1-94d3-f6dcb8f58b5f)
 
 Remix TypeScript monorepo with Turborepo pipelines, Prisma, PostgreSQL, Docker deploy to Fly.io, pnpm, shadcn/ui TailwindCSS.
 
