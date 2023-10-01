@@ -1,0 +1,31 @@
+DATABASE_URL='mysql://ebr4gx6q2hrjensn8iq0:pscale_pw_H6YhJg3fbcwxO6EiDTnLEQcBzADFl1lP3s77PAzF42v@aws.connect.psdb.cloud/micu?ssl={"rejectUnauthorized":true}'
+POSTGRES_URL=postgres://default:arHieV6q0RpT@ep-restless-sound-466458-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15 
+DATABASE_URL_NON_POOLING="postgres://default:arHieV6q0RpT@ep-restless-sound-466458.eu-central-1.postgres.vercel-storage.com:5432/verceldb"
+TEST_DATABASE_URL=postgresql://postgres:e0gXD8RT5pEXkAIQURKt@containers-us-west-35.railway.app:6006/railway
+PRISMA_HIDE_UPDATE_MESSAGE=true
+LOG_LEVEL=trace
+REDWOOD_ENV_FILESTACK_API_KEY=AJguM3ZFLRjya9QFdQZAAz
+# You can get these from your Stripe Test Dashboard
+#
+NEXT_PUBLIC_APP_URL=http://dev.mosque.icu:3000/
+NEXT_PUBLIC_API_URL=http://dev.mosque.icu:3000/api/
+AUTH_ORIGIN =.mosque.icu:8910
+FILE_URL=http://dev.mosque.icu:3000/
+STRIPE_PK=pk_test_51MRarDLduwCNugYqDrFbrasdUw36G5jR3GJJ27MiMbOtJ1H4jxWVXIcc2KzblXCc9V9PiSQ5vBGGSVdJvpEGNhz20031lDHQDZ
+STRIPE_SK=sk_test_51MRarDLduwCNugYqIrgcUiQ5o867rhjSt6KGY9gPGCbomZnVmR7apIrwpL5I0XKVjwxQKR4KjWMheIHxFY1OGXYx00uEQn9CLU
+# You can get this one from the Stripe CLI by running:
+#
+# ```
+# stripe listen --api-key=sk_test_... --print-secret
+# ``` 
+#
+# `--api-key` should be the same as your `STRIPE_SK`
+#
+# See: https://stripe.com/docs/stripe-cli
+#
+STRIPE_WEBHOOK_SK=whsec_46be8e49437e8864e015de03e93e372b4349560352cd9adebf7e65d13469dd8c
+# You can get this by running `yarn rw g secret`
+#
+# SESSION_SECRET=QmNPm9mcPmCyjosnb94bXVtwvFsVqD4VSy8AhAQGe29EShBy4VjpYyKkvmsLUBgZ
+SESSION_SECRET=dNLeotRY3TEYL7iJEDAWEkQebVtmhwgkPn8ciiZXWjpLPRCWov//YCk4OjoGdflw
+
